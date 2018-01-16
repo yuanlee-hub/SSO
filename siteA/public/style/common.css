@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+}
+nav {
+    padding: 10px;
+    border-bottom: 1px solid #999;
+}
+.flash {
+    padding-top: 10px;
+    height: 30px;
+}
+.flash>div {
+    line-height: 28px;
+    padding:0 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #eee;
+}
+.flash .success {color: #0a0;}
+.flash .error {color: #c00;}

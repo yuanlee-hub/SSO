@@ -1,0 +1,21 @@
+{
+  "name": "SSO",
+  "version": "1.0.0",
+  "description": "SSO",
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:yuanlee520310/SSO.git"
+  },
+  "keywords": [
+    "SSO"
+  ],
+  "author": "yuanlee@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "koa-flash": "^1.0.0",
+    "koa-handlebars-next": "^2.0.1",
+    "koa-session": "^5.7.1",
+    "koa-static": "^4.0.2",
+    "koa2": "^2.0.0-alpha.7"
+  }
+}
