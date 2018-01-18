@@ -12,6 +12,7 @@
   "author": "yuanlee@163.com",
   "license": "ISC",
   "dependencies": {
+    "koa-body": "^2.5.0",
     "koa-flash": "^1.0.0",
     "koa-handlebars-next": "^2.0.1",
     "koa-session": "^5.7.1",

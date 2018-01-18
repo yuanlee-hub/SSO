@@ -27,7 +27,7 @@ app.use(require('koa-handlebars-next')({
         }
     }
 }));
-
+app.use(require('koa-body')());
 require('./routes/index')(app);
 
 app.listen(config.port,()=>{

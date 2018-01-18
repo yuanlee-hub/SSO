@@ -14,4 +14,9 @@ module.exports={
         signed:true,
         rolling:false
     },
+    Users:{
+        admin:123456,
+        a:123456,
+        b:123456
+    }
 };
