@@ -1,3 +1,8 @@
 {{>header}}
 
-Hello,{{user}}!
+{{#if user}}
+    Hello {{user}},欢迎访问SSO！
+{{else}}
+    请
+    <a href="/login">登录</a>
+{{/if}}

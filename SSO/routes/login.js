@@ -2,7 +2,7 @@ const router=require('koa-router')();
 const {Users}=require('../config/config');
 
 router.get('/',async (ctx,next)=>{
-    let user=ctx.cookies.get('user'),{redirect}=ctx.query;
+    let user=ctx.cookies.get('ssoCookieUser'),{redirect}=ctx.query;
     console.log('user/redirect:',user,redirect);
 
     if(user){
@@ -22,9 +22,10 @@ router.get('/',async (ctx,next)=>{
 router.post('/',async ctx=>{
     let {name,password}=ctx.request.body,{redirect}=ctx.query;
     if(Users[name] && password==Users[name]){
-        ctx.cookies.set('user',name);
+        ctx.cookies.set('ssoCookieUser',name);
         ctx.flash={success:'登录成功'};
         ctx.redirect(redirect?redirect+'?token='+name:'/');
+        //ctx.redirect('/');
     }else{
         ctx.flash={error:'登录失败'};
         ctx.redirect('/login');

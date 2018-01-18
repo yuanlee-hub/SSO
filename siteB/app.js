@@ -30,6 +30,6 @@ app.use(require('koa-handlebars-next')({
 
 require('./routes/index')(app);
 
-app.listen(config.port,()=>{
+app.listen(config.port,'127.0.0.1',()=>{
     console.log(`\n\n[${config.name}] port:${config.port} Time:${new Date().toLocaleString()}`);
 });
